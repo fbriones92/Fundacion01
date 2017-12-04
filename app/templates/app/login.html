@@ -1,11 +1,11 @@
-{%  extends 'web_base.html' %}
+{%  extends 'app/web_base.html' %}
 {% block content %}
 
 <h2>{{ title }}</h2>
 <div class="row">
     <div class="col-md-8">
         <section id="loginForm">
-            <form  id="logoForm" action="{% url 'login' %}" method="post" class="form-horizontal">
+            <form  id="logoForm" action="" method="post" class="form-horizontal">
                 {% csrf_token %}
                 <h4>Usar una Cuenta Local Para Ingresar.</h4>
                 <hr />

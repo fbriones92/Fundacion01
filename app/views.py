@@ -6,5 +6,5 @@ from django.http.request import HttpRequest
 
 
 def inicio(request):
-    return render(request, 'banner.html', {'year':datetime.now().year,})
+    return render(request, 'app/banner.html', {'year':datetime.now().year,})
 
